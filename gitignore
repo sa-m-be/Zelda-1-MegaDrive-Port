@@ -1,0 +1,36 @@
+# Local ROMs, generated binaries and patches: review distribution rights separately
+*.nes
+*.fds
+*.sfc
+*.smc
+*.mdrom
+*.gen
+*.smd
+*.bin
+*.rom
+*.ips
+*.bps
+*.ups
+*.xdelta
+*.zip
+*.7z
+*.rar
+*.sav
+*.srm
+*.state
+*.state[0-9]*
+roms/
+assets-extracted/
+private/
+build/
+out/
+dist/
+*.log
+*.o
+*.obj
+__pycache__/
+.DS_Store
+.env
+.env.*
+# Mega Drive ROMs with .md extension belong in ignored ROM/build folders.
+# Markdown documentation also uses .md; never blindly ignore all *.md files.
