@@ -1,23 +1,27 @@
 ---
 name: Bug report
-about: Report a reproducible problem with a development build
+about: Report a bug in the Zelda Mega Drive port
+title: "[BUG] "
 labels: bug
+assignees: ''
 ---
 
-**Build ID:**
+## Bug description
 
-**Emulator/version or hardware/flash cartridge:**
+## Steps to reproduce
 
-**Region (NTSC/PAL):**
+## Expected behavior
 
-**Steps to reproduce:**
-1.
-2.
+## Actual behavior
 
-**Expected behavior:**
+## Environment
+- Port version:
+- Console or emulator:
+- Hardware model:
+- Region (NTSC/PAL):
+- Flash cartridge:
+- Firmware version:
 
-**Actual behavior:**
+## Screenshots or videos
 
-**Reproducibility and additional details:**
-
-Do not attach copyrighted ROMs or extracted game assets.
+## Additional information
