@@ -1,6 +1,6 @@
 # The Legend of Zelda — Mega Drive / Genesis Native Port
 
-![Platform](https://img.shields.io/badge/platform-Mega%20Drive%20%2F%20Genesis-blue) ![Revision](https://img.shields.io/badge/revision-MD35-blue) ![Hardware](https://img.shields.io/badge/hardware-tested-brightgreen) ![Status](https://img.shields.io/badge/status-in%20development-orange)
+![Platform](https://img.shields.io/badge/platform-Mega%20Drive%20%2F%20Genesis-blue) ![Hardware](https://img.shields.io/badge/hardware-tested-brightgreen) ![Status](https://img.shields.io/badge/status-in%20development-orange)
 
 [Português (Brasil)](README.pt-BR.md) · [FAQ](FAQ.md) · [Help](HELP.md) · [Build](BUILD.md) · [Changelog](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md)
 
@@ -12,7 +12,7 @@ The game logic runs on the Motorola 68000. I use static translation of the origi
 
 ## Current development status
 
-My current reference build is **MD35**. It includes the work on movement, scrolling, dungeon rendering, sound and pause-screen corrections. I am continuing to validate the game and refine compatibility.
+My current reference build includes the work on movement, scrolling, dungeon rendering, sound and pause-screen corrections. I am continuing to validate the game and refine compatibility.
 
 | Feature | Status |
 | --- | --- |
@@ -21,7 +21,7 @@ My current reference build is **MD35**. It includes the work on movement, scroll
 | Overworld and dungeon scrolling | Working in development tests |
 | Dungeon rendering | Corrected in development tests |
 | Music and sound effects | Implemented; further audio validation planned |
-| Title and pause menu | Updated through MD35 |
+| Title and pause menu | Updated |
 | Original hardware | Tested on the setup below |
 | Full playthroughs of both quests and save/load | Full validation pending |
 | Sustained 60 fps in all scenes | Not yet verified |
@@ -42,7 +42,7 @@ I also use BlastEm during development. I plan to expand testing and welcome repr
 
 ## Web converter
 
-I am working on a browser-based converter that will allow users to provide their own compatible NES ROM and generate a Mega Drive ROM locally, without installing Python or an SDK. The current prototype verifies the NES input and can update an existing MD13 build to MD35. Direct NES-to-Mega Drive compilation in the browser is still in development. See [BUILD.md](BUILD.md) for details.
+My [web converter](https://sa-m-be.github.io/Zelda-1-MegaDrive-Converter/) is designed to generate the port locally from a compatible original NES ROM, without desktop installations or an external SDK. The direct conversion engine has been verified against my reference ROM outside the browser; full browser integration testing and distribution review are still pending. When the converter is ready for use, select the NES ROM, choose **Generate Mega Drive ROM**, then **Download PORT**. See [BUILD.md](BUILD.md) for technical details.
 
 ## Getting started and feedback
 

@@ -14,7 +14,7 @@ Please identify the scene, dungeon or menu where the issue occurs. Include wheth
 
 ## Converter issues
 
-The web converter is still a prototype. It can validate a supported NES ROM and update an existing MD13 build to MD35, but cannot yet compile the game directly from the NES ROM. The local build frontend is also experimental. See [BUILD.md](BUILD.md).
+The web converter is experimental. My direct conversion engine reproduces the reference port outside the browser; full browser integration remains to be tested. Use a supported USA PRG0 iNES dump and an HTTPS connection. When available, the **Download PORT** button saves `The Legend of Zelda - Mega Drive Port.bin`. See [BUILD.md](BUILD.md).
 
 ## Reporting a problem
 

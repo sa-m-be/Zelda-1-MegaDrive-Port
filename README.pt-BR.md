@@ -10,7 +10,7 @@ O jogo executa código 68000 nativamente. Utilizo tradução estática do códig
 
 ## Estado atual
 
-Minha versão de referência é a **MD35**. Ela reúne melhorias de movimentação, rolagem de cenários, renderização das dungeons, áudio, título e correções do menu de pausa. Ainda estou trabalhando na validação completa das duas quests, dos saves, do desempenho e do equilíbrio sonoro.
+Minha versão de referência reúne melhorias de movimentação, rolagem de cenários, renderização das dungeons, áudio, título e correções do menu de pausa. Ainda estou trabalhando na validação completa das duas quests, dos saves, do desempenho e do equilíbrio sonoro.
 
 ## Testes em hardware real
 
@@ -18,7 +18,7 @@ Testei o port no meu Mega Drive 1 japonês original (NTSC-J), utilizando um Ever
 
 ## Conversor web
 
-Estou desenvolvendo um conversor para que seja possível selecionar a própria ROM original do NES e gerar a versão de Mega Drive diretamente no navegador, sem instalar programas. O protótipo atual valida a ROM de NES e atualiza uma base MD13 existente para MD35. A compilação completa a partir do NES ainda está em desenvolvimento.
+Meu [conversor web](https://sa-m-be.github.io/Zelda-1-MegaDrive-Converter/) foi desenvolvido para gerar o port localmente a partir de uma ROM original compatível de NES, sem instalação de programas ou SDK. Validei o motor de conversão direta fora do navegador comparando o resultado com minha ROM de referência. Ainda falta validar a integração completa no navegador e revisar a distribuição. Quando estiver pronto para uso, selecione a ROM de NES, clique em **Generate Mega Drive ROM** e depois em **Download PORT**.
 
 ## Como ajudar
 

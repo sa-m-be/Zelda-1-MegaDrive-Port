@@ -31,3 +31,9 @@ I tested the port on an original Japanese Mega Drive Model 1 with an EverDrive V
 - NES ROM hash validation and experimental source generation.
 - Local MD13-to-MD35 update and output checksum verification.
 - Direct NES-to-Mega Drive compilation in the browser remains in development.
+
+## Web converter — direct build engine
+
+- Direct reconstruction from the original NES input verified outside the browser against the reference port.
+- Browser integration remains experimental.
+- Standardized the public port name and **Download PORT** button; internal milestone identifiers remain in this changelog.

@@ -4,7 +4,7 @@
 
 I am consolidating the development revisions into a reproducible build. The experimental local converter uses the original USA PRG0 iNES ROM, generates the translated code and graphics, builds MD13 with the matching toolchain and applies nine incremental overlays to reconstruct MD35.
 
-The original toolchain is MarsDev v1.0.0-rc1 with SGDK 1.81. The local frontend requires Python 3.10+, GNU Make and a compatible build environment. Full clean compilation from NES input and native desktop compatibility are not yet validated.
+The original toolchain is MarsDev v1.0.0-rc1 with SGDK 1.81. The local frontend requires Python 3.10+, GNU Make and a compatible build environment. That earlier toolchain-based pipeline is not yet validated as a clean build. The newer direct conversion engine described below has been verified outside the browser.
 
 | Reference | SHA-256 |
 | --- | --- |
@@ -16,7 +16,7 @@ I have verified the generated MD13 source files against the archived outputs and
 
 ## Browser converter
 
-My browser prototype validates the NES input, has an experimental source-generation mode and supports the MD13-to-MD35 updater. The updater has been verified with the reference hashes. Direct browser compilation to a playable ROM and full browser UI testing are still pending. The source-generation mode uses a Pyodide runtime fetched from a CDN; it is not a standalone offline build.
+My newer direct conversion engine uses a fixed pre-linked runtime, a local 6502-to-68000 translator, a two-pass assembler, graphics reconstruction and revision overlays. I verified the resulting ROM byte for byte against the reference in desktop Python. The web interface loads Pyodide from a CDN, without requiring a desktop SDK or an intermediate ROM. Full browser integration testing and distribution review remain pending. See the [converter repository](https://github.com/sa-m-be/Zelda-1-MegaDrive-Converter).
 
 ## Testing
 

@@ -1,4 +1,4 @@
-# MDxx — Development release
+# The Legend of Zelda — Mega Drive Port
 
 ## What's new
 
