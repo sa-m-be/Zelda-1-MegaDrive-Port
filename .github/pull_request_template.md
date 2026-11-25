@@ -1,9 +1,12 @@
-## Changes
+## Description
 
-## Motivation
+## Changes introduced
 
 ## Testing performed
 
-## Known limitations
+- [ ] Tested on emulator
+- [ ] Tested on real hardware
+- [ ] No known regressions
+- [ ] Documentation updated
 
-- [ ] I have the right to share the contributed material and have identified any third-party dependencies.
+## Additional notes
