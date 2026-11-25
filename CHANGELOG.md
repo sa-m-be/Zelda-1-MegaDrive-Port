@@ -1,19 +1,33 @@
 # Changelog
 
-Development milestones based on previous project notes. These are not public release tags or independently verified test results.
+These are my internal development milestones, not necessarily public release tags.
 
-## Hardware testing update
-- The project developer reports testing on an original Japanese Mega Drive Model 1 (NTSC-J) with an EverDrive V3 Pro flash cartridge. Exact tested build and scope remain to be documented.
+## MD35 — Current reference build
 
-## MD22 — Experimental
-- Sword and damage sound effects reported present, with low volume.
-- Music reported working; audio balance remains open.
-- Overworld and dungeon scrolling and dungeon borders reported working.
-- Recent audio work explored PSG/OPN2 synthesis and removed earlier PCM experiments.
+- Refined pause-menu behavior in interior areas.
+- Preserved prior title, scrolling, dungeon and sound improvements.
+- Verified the incremental reconstruction against the MD35 reference SHA-256.
+- Full playthrough and broad hardware compatibility validation remain pending.
 
-## MD13–MD21 — Development milestones
-- Iterative fixes to dungeon borders and collision behavior.
-- Fixes to top-edge artifacts and downward scrolling.
-- Audio experiments and correction of missing effects.
+## MD30–MD34
 
-Earlier revisions and exact dates should be reconstructed from the original source archives before publishing a detailed history.
+- Iterative pause-menu, title and transition fixes.
+
+## MD29
+
+- Audio driver and volume refinements, with door-rendering updates.
+
+## MD13–MD22
+
+- Iterative fixes to dungeon borders, collision and scrolling artifacts.
+- Audio experiments and improvements to missing sword and damage effects.
+
+## Hardware testing
+
+I tested the port on an original Japanese Mega Drive Model 1 with an EverDrive V3 Pro. Further compatibility testing is planned.
+
+## Web converter — Prototype 0.1
+
+- NES ROM hash validation and experimental source generation.
+- Local MD13-to-MD35 update and output checksum verification.
+- Direct NES-to-Mega Drive compilation in the browser remains in development.

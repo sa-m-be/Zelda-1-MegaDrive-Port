@@ -1,29 +1,34 @@
-# The Legend of Zelda — Mega Drive / Genesis Port
+# The Legend of Zelda — Mega Drive / Genesis Native Port
 
-![Platform](https://img.shields.io/badge/platform-Mega%20Drive%20%2F%20Genesis-blue) ![Status](https://img.shields.io/badge/status-experimental-orange) ![Hardware tested](https://img.shields.io/badge/hardware-tested-brightgreen) ![Architecture](https://img.shields.io/badge/architecture-68000%20%2F%20Z80-lightgrey)
+![Platform](https://img.shields.io/badge/platform-Mega%20Drive%20%2F%20Genesis-blue) ![Revision](https://img.shields.io/badge/revision-MD35-blue) ![Hardware](https://img.shields.io/badge/hardware-tested-brightgreen) ![Status](https://img.shields.io/badge/status-in%20development-orange)
 
-An unofficial fan-led technical project exploring a native adaptation of the original 1986 NES game for the Sega Mega Drive / Genesis. The goal is to reproduce the original gameplay on Sega hardware without embedding a NES emulator.
+[Português (Brasil)](README.pt-BR.md) · [FAQ](FAQ.md) · [Help](HELP.md) · [Build](BUILD.md) · [Changelog](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md)
 
-[Português (Brasil)](README.pt-BR.md) · [FAQ](FAQ.md) · [Build](BUILD.md) · [Changelog](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Contributing](CONTRIBUTING.md) · [Credits](CREDITS.md)
+## About my project
 
-## Development status
+I started this project to bring the original 1986 NES game, The Legend of Zelda, to the Sega Mega Drive / Genesis as a native port, not as an emulator. My goal is to preserve the original gameplay and experience while adapting the game to the architecture of Sega's 16-bit console.
 
-The most recent development milestone recorded in this documentation is MD22. The project remains experimental; this is not a claim of full game completion or hardware compatibility.
+The game logic runs on the Motorola 68000. I use static translation of the original PRG0 code alongside native routines for video, controls and other platform-specific behavior. Audio uses the Mega Drive's PSG, YM2612 and Z80 for the reserved DMC effects. The sound implementation remains an approximation of the original NES APU.
 
-| Subsystem | Reported status |
+## Current development status
+
+My current reference build is **MD35**. It includes the work on movement, scrolling, dungeon rendering, sound and pause-screen corrections. I am continuing to validate the game and refine compatibility.
+
+| Feature | Status |
 | --- | --- |
-| Native execution | Implemented; further verification needed |
+| Native 68000 execution | Implemented |
 | Player movement and controls | Working in development tests |
 | Overworld and dungeon scrolling | Working in development tests |
-| Dungeon borders | Corrected in recent revisions |
-| Music | Working in development tests |
-| Sword and damage sound effects | Present; volume balance needs tuning |
-| Original hardware | Tested on Japanese Mega Drive Model 1 with EverDrive V3 Pro (developer report) |
-| Full game, both quests and save behavior | Not yet certified |
+| Dungeon rendering | Corrected in development tests |
+| Music and sound effects | Implemented; further audio validation planned |
+| Title and pause menu | Updated through MD35 |
+| Original hardware | Tested on the setup below |
+| Full playthroughs of both quests and save/load | Full validation pending |
+| Sustained 60 fps in all scenes | Not yet verified |
 
-## Hardware compatibility
+## Real hardware testing
 
-The port has been tested on an original Japanese Sega Mega Drive Model 1 (NTSC-J) using an EverDrive V3 Pro flash cartridge, as reported by the project developer. Exact tested build, cartridge firmware, test duration and scope were not specified. This is not a full compatibility certification.
+I have tested the port on my original Japanese Sega Mega Drive Model 1 (NTSC-J) using an EverDrive V3 Pro flash cartridge. This is my real-hardware test setup; I am not claiming complete compatibility across all console revisions or regions.
 
 | Configuration | Status |
 | --- | --- |
@@ -31,23 +36,20 @@ The port has been tested on an original Japanese Sega Mega Drive Model 1 (NTSC-J
 | Mega Drive Model 2 | Not yet verified |
 | Genesis (North America) | Not yet verified |
 | Mega Drive (PAL) | Not yet verified |
-| FPGA / MiSTer | Not yet verified |
+| MiSTer / FPGA | Not yet verified |
 
-## Getting started
+I also use BlastEm during development. I plan to expand testing and welcome reproducible reports from other setups.
 
-See [BUILD.md](BUILD.md) for the intended build and testing workflow. No downloadable build is included in this documentation package. When an authorized release is available, follow its version-specific instructions.
+## Web converter
 
-## Project goals
+I am working on a browser-based converter that will allow users to provide their own compatible NES ROM and generate a Mega Drive ROM locally, without installing Python or an SDK. The current prototype verifies the NES input and can update an existing MD13 build to MD35. Direct NES-to-Mega Drive compilation in the browser is still in development. See [BUILD.md](BUILD.md) for details.
 
-- Native operation on Mega Drive / Genesis hardware.
-- Faithful gameplay, graphics timing, controls and sound behavior.
-- A 60 fps performance target where practical; not a measured guarantee.
-- Reproducible builds, documented changes and community testing.
+## Getting started and feedback
 
-## Feedback
+Check [Help](HELP.md) and [FAQ](FAQ.md) for instructions and current limitations. I will document available releases and their requirements in GitHub Releases. If you find a bug, please open an Issue with the revision, your setup and the steps to reproduce it.
 
-Use GitHub Issues to report a reproducible bug. Include the build identifier, emulator or console, region and steps to reproduce. See [CONTRIBUTING.md](CONTRIBUTING.md).
+## Credits and rights
 
-## Rights and distribution
+I maintain this independent fan project under the GitHub account [sa-m-be](https://github.com/sa-m-be). See [CREDITS.md](CREDITS.md) for acknowledgments.
 
-This is an unofficial project, not affiliated with, endorsed by or sponsored by Nintendo or Sega. The original game and its protected content remain the property of their respective rights holders. This repository must not include unauthorized ROMs, extracted assets, or other material that the uploader has no right to distribute. Any patch or translated code must also be reviewed for redistribution rights. No license to third-party intellectual property is granted by this notice.
+The Legend of Zelda and its original content belong to their respective rights holders. This project is not affiliated with or endorsed by Nintendo or Sega. I do not provide an original NES ROM or a complete converted ROM in this documentation repository. I am reviewing the redistribution rights of code and patches before making them publicly available.

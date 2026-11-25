@@ -1,25 +1,29 @@
-# The Legend of Zelda — Port para Mega Drive
+# The Legend of Zelda — Port nativo para Mega Drive
 
-Projeto técnico não oficial de adaptação nativa do jogo original de NES de 1986 para Mega Drive / Genesis, sem utilizar um emulador de NES embutido.
+[English](README.md) · [FAQ](FAQ.md) · [Ajuda](HELP.md) · [Compilação](BUILD.md) · [Histórico](CHANGELOG.md) · [Roadmap](ROADMAP.md)
 
-[English](README.md) · [FAQ](FAQ.md) · [Compilação](BUILD.md) · [Histórico](CHANGELOG.md) · [Roadmap](ROADMAP.md) · [Contribuições](CONTRIBUTING.md)
+## Sobre o meu projeto
+
+Comecei este projeto com o objetivo de trazer o The Legend of Zelda original de NES, lançado em 1986, para o Mega Drive / Genesis. Quero preservar a experiência e a jogabilidade do original, adaptando o jogo à arquitetura do console de 16 bits da Sega, sem utilizar um emulador de NES.
+
+O jogo executa código 68000 nativamente. Utilizo tradução estática do código PRG0 e rotinas específicas para vídeo, controles e outros recursos do Mega Drive. O áudio utiliza PSG, YM2612 e Z80 para os efeitos DMC reservados, com aproximações do comportamento da APU original.
 
 ## Estado atual
 
-A revisão de desenvolvimento registrada nesta documentação é MD22. O projeto é experimental. Os testes anteriores indicam movimentação, rolagens, molduras das dungeons corrigidas, música e efeitos sonoros de espada e dano presentes. O volume de alguns efeitos ainda precisa ser ajustado. A conclusão integral das duas quests e o comportamento dos saves ainda não foram certificados.
+Minha versão de referência é a **MD35**. Ela reúne melhorias de movimentação, rolagem de cenários, renderização das dungeons, áudio, título e correções do menu de pausa. Ainda estou trabalhando na validação completa das duas quests, dos saves, do desempenho e do equilíbrio sonoro.
 
 ## Testes em hardware real
 
-O port foi testado em um Sega Mega Drive Model 1 japonês (NTSC-J) com um flashcart EverDrive V3 Pro, conforme relato do desenvolvedor. A revisão exata testada, o firmware do cartucho, a duração e o escopo do teste não foram informados. Outras revisões de console e regiões ainda não foram verificadas nesta documentação.
+Testei o port no meu Mega Drive 1 japonês original (NTSC-J), utilizando um EverDrive V3 Pro. Também utilizo o BlastEm durante o desenvolvimento. Pretendo ampliar os testes para outros modelos, regiões e configurações. Ainda não considero a compatibilidade integral certificada.
 
-## Objetivos
+## Conversor web
 
-Executar nativamente no Mega Drive, preservar a jogabilidade original, buscar desempenho de 60 fps e documentar as diferenças entre os hardwares. A meta de desempenho não representa uma medição confirmada.
+Estou desenvolvendo um conversor para que seja possível selecionar a própria ROM original do NES e gerar a versão de Mega Drive diretamente no navegador, sem instalar programas. O protótipo atual valida a ROM de NES e atualiza uma base MD13 existente para MD35. A compilação completa a partir do NES ainda está em desenvolvimento.
 
 ## Como ajudar
 
-Relate bugs em Issues, incluindo revisão testada, emulador ou console, região e passos para reproduzir. Consulte os arquivos vinculados acima.
+Se encontrar algum problema, abra uma Issue com a versão, o ambiente de teste e os passos para reproduzir o erro. Sugestões e contribuições técnicas são bem-vindas.
 
-## Direitos autorais
+## Créditos e direitos autorais
 
-Projeto independente, sem vínculo ou endosso da Nintendo ou da Sega. Não inclui autorização para redistribuir ROMs, recursos ou códigos protegidos de terceiros. Revise também os direitos de distribuição de patches e código convertido antes da publicação.
+Mantenho este projeto independente pela conta [sa-m-be](https://github.com/sa-m-be). Consulte [CREDITS.md](CREDITS.md). O projeto não possui vínculo com a Nintendo ou a Sega. Os direitos do jogo original pertencem aos respectivos titulares. Não disponibilizo ROMs completas neste repositório de documentação e estou revisando os direitos de distribuição dos fontes e patches.

@@ -1,15 +1,15 @@
-# MDxx — Experimental
+# MDxx — Development release
 
-## Changes
+## What's new
 
 ## Known issues
 
-## Tested environments
+## My test results
 
-## Installation / build instructions
+## Installation or conversion instructions
 
-## Input and output checksums (if applicable)
+## Input and output checksums
 
-## Distribution review
+## Distribution notes
 
-Only attach materials that you have the right to distribute. No unauthorized ROMs or extracted assets. A patch is not automatically free of copyright concerns.
+Attach only files cleared for distribution. Do not include unauthorized ROMs or extracted assets.

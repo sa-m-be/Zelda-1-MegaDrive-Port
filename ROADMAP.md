@@ -1,13 +1,13 @@
 # Roadmap
 
-## Next priorities
+My priorities for the next stages:
 
-- [ ] Balance sword and damage sound effects against music.
-- [ ] Run a systematic regression test for scrolling and dungeon borders.
-- [ ] Measure frame timing in complex scenes.
-- [ ] Verify save/load and both quests through full playthroughs.
-- [ ] Expand real-hardware testing beyond the reported Japanese Model 1 / EverDrive V3 Pro setup; validate NTSC/PAL behavior and other console revisions.
-- [ ] Document the reproducible build and exact dependencies.
-- [ ] Review redistribution rights and prepare an authorized experimental release.
+- [ ] Complete and verify the browser-based NES-to-Mega Drive converter.
+- [ ] Consolidate and document a reproducible build.
+- [ ] Validate complete playthroughs of both quests and save/load behavior.
+- [ ] Refine sound balance and timing.
+- [ ] Measure performance in demanding scenes.
+- [ ] Expand testing to additional consoles, regions and flash cartridges.
+- [ ] Complete the redistribution review and prepare versioned releases.
 
-No completion dates are promised. This list is a proposed prioritization based on the latest development notes, not a certification that other features are missing or complete.
+I welcome suggestions and reproducible bug reports. I have not committed to a release date.

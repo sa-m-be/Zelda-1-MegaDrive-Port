@@ -1,15 +1,15 @@
 # Contributing
 
-Thank you for helping improve this experimental native port.
+Thank you for your interest in my project. I welcome reproducible bug reports, technical suggestions and focused contributions.
 
-## Reporting bugs
+## Bug reports
 
-Open an Issue using the bug report template. Include the build ID, emulator version or hardware details, region, steps, expected/actual behavior and reproducibility. Do not attach copyrighted ROMs or extracted game assets.
+Use the Issue template. Include your build ID, console or emulator, region, flash cartridge if applicable, expected and actual behavior, and reproduction steps. Please do not attach ROMs or extracted copyrighted assets.
 
-## Proposing changes
+## Changes
 
-Discuss substantial architecture changes in an Issue first. Keep contributions focused, explain the technical rationale and include test evidence. Only submit material you have the right to share; identify third-party dependencies and their licenses.
+For substantial architecture changes, open an Issue first so we can discuss the approach. Include testing evidence and identify any third-party dependencies. Only submit material you have permission to share.
 
 ## Testing
 
-Use the checklist in [BUILD.md](BUILD.md). Do not claim real-hardware support from emulator tests alone.
+See [BUILD.md](BUILD.md) for the reference setup. Distinguish emulator tests from original hardware tests and note any limitations.
